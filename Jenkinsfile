@@ -13,12 +13,12 @@ pipeline {
         }
         stage('build') {
             steps {
-                bat 'mvn clean'
+                bat 'C:\\Users\\vignesh\\apache-maven-3.9.6\\bin\\mvn clean'
             }
         }
         stage('test') {
             steps {
-                bat 'mvn test'
+                bat 'C:\\Users\\vignesh\\apache-maven-3.9.6\\bin\\mvn test'
             }
         }
         stage('deploy') {
