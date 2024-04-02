@@ -9,17 +9,17 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
         stage('test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         stage('deploy') {
             steps {
-                echo 'deploy successful'
+                //deploy success
             }
         }
     }
