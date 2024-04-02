@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-    PATH = "C:\\WINDOWS\\SYSTEM32; C:\Users\vignesh\apache-maven-3.9.6\bin"
+    PATH = "C:\\WINDOWS\\SYSTEM32; C:\\Users\\vignesh\\apache-maven-3.9.6\\bin"
     }
 
     stages {
