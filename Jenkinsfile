@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('connect') {
             steps {
-                git 'https://github.com/mahasadha/mavenwebapp.git'
+                git branch:'main' , url: 'https://github.com/mahasadha/mavenwebapp.git'
             }
         }
         stage('build') {
