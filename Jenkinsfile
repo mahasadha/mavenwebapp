@@ -3,7 +3,7 @@ pipeline {
 
     environment {
     PATH = "C:\\WINDOWS\\SYSTEM32; C:\\Users\\vignesh\\apache-maven-3.9.6\\bin"
-    set JAVA_HOME='C:\\Program Files\\Java\\jdk-17'
+    JAVA_HOME='C:\\Program Files\\Java\\jdk-17'
     }
 
     stages {
@@ -14,13 +14,11 @@ pipeline {
         }
         stage('build') {
             steps {
-                set JAVA_HOME='C:\\Program Files\\Java\\jdk-17'
                 bat 'C:\\Users\\vignesh\\apache-maven-3.9.6\\bin\\mvn clean'
             }
         }
         stage('test') {
             steps {
-                set JAVA_HOME='C:\\Program Files\\Java\\jdk-17'
                 bat 'C:\\Users\\vignesh\\apache-maven-3.9.6\\bin\\mvn test'
             }
         }
